@@ -1,0 +1,70 @@
+
+.td-cart-width {
+    width: 150px;
+}
+
+.payment{
+    background-color: #408AD3;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.total-contain{
+    text-align: right;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.total{
+    margin-top: 15px;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.minus-button{
+    border: 1px solid gainsboro;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    margin-right: -1px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.add-button{
+    border: 1px solid gainsboro;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    margin-left: -1px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.input-button{
+    border: 1px solid gainsboro;
+    min-width: 35px;
+    height: 35px;
+    background-color: white;
+    color: gray;
+    text-align: center;
+
+}
+.total-number{
+    display: inline;
+}
+.goods-cartpage{
+    text-decoration: none;
+    margin-left: 15px;
+    color: #787878;
+    margin-right: 10px;
+}
+.cart-name-cartpage{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.inventory_count{
+    display: none;
+}

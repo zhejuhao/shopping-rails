@@ -1,0 +1,158 @@
+
+.table {
+    width: 1100px;
+    border: 1px solid #DDDDDD;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.table-header {
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    height: 60px;
+    /*line-height: 18px;*/
+    font-size: 21px;
+    margin: -1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #3A3A3A;
+
+}
+.table-name {
+    color: #3A3A3A;
+    /*text-align: center;*/
+    margin-top: 15px;
+    margin-left: 250px;
+}
+td {
+    border: 1px solid #DDDDDD;
+    width: 130px;
+}
+
+th {
+    border: 1px solid #DDDDDD;
+    text-align: center;
+}
+
+tr {
+    text-align: center;
+    height: 50px;
+}
+
+
+.td-width {
+    width: 206px;
+}
+.add-cart:hover{
+    background: lightskyblue;
+}
+.add-cart {
+    background-color: #408AD3;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 15px 8px 15px;
+    border: 1px inset;
+}
+
+.td-cart {
+    width: 301px;
+}
+.table-body-header {
+    font-size: 17px;
+    height:40px;
+    color: #070707;
+}
+
+.table-contain {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    color: #343434;
+}
+.search {
+    width: 150px;
+    float: right;
+    margin-right: 70px;
+    display: block;
+    clear: both;
+    height: 30px;
+}
+.search-text{
+    height: 20px;
+    width: 100px;
+}
+.search-button{
+    float: right;
+    clear: both;
+    /*display: inline;*/
+}
+textarea{
+    height: 20px;
+    width: 100px;
+    border: 0;
+    resize: none;
+    /*去掉右下角拖拽*/
+}
+input[type = "submit"]
+{
+    height: 25px;
+    width: 40px;
+    background: #EBEBEB;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    float: right;
+    font-size: 16px;
+}
+.tbody-list{
+   display: table-row-group;
+}
+.tbody-search{
+    display: none;
+}
+header {
+    background-color: #222222;
+    border-radius: 3px;
+    font-size: 21px;
+    text-align: center;
+    height: 66px;
+}
+.header-content{
+    height: 66px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.goods{
+    text-decoration: none;
+    margin-left: 15px;
+    /*color: #787878;*/
+    color: white;
+    margin-right: 10px;
+
+}
+.header-cart{
+    padding-top: 18px;
+    float: right;
+    padding-bottom: 18px;
+}
+.img-cart {
+    height: 30px;
+    width: 30px;
+}
+.cart-name{
+    text-decoration: none;
+    color: #787878;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.goods-number{
+    display: inline;
+}
+.header-name{
+    float: left;
+    height: 66px;
+    line-height: 66px;
+}

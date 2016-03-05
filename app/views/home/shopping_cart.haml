@@ -1,0 +1,61 @@
+%header
+  .header-content
+    .header-name
+      %a.goods-cartpage{:href => "home.haml"} 商品列表
+    .header-cart
+      %a.cart-name-cartpage{:href => "shopping_cart.haml"}
+        %img.img-cart{:alt => "购物车", :src => "/white.png"}
+          购物车
+          (
+          #cart_goods_number.goods-number
+            =@count
+          )
+.table
+  .table-header
+    .table-name
+      购物清单
+  %table#show_cart_counts.table-contain
+    %thead
+      %tr.table-body-header
+        %td.td-cart-width 分类
+        %td.td-cart-width 名称
+        %td.td-cart-width 单价(元)
+        %td.td-cart-width 单位
+        %td.td-cart-width 数量
+        %td.td-cart-width 小计(元)
+        %td
+      %tbody#table_body_cart
+        -@cart.each do|i|
+          %tr{:id=>"tr#{i.id}"}
+            %td{:id=>"sort#{i.id}"}
+              =i.sort
+            %td{:id=>"name#{i.id}"}
+              =i.name
+            %td{:id=>"price#{i.id}"}
+              =i.price
+            %td{:id=>"unit#{i.id}"}
+              =i.unit
+
+            %td
+              %button.minus-button{:onclick =>"minus_count(#{i.id})"}
+                —
+              %button.input-button{:id=>"goods_count#{i.id}"}
+                =i.count
+              %button.add-button{:onclick =>"add_count(#{i.id})"}
+                +
+            %td
+              %div{:id=>"sum#{i.id}"}
+                =i.price*i.count
+            %td.inventory_count{:id=>"inventory#{i.id}"}
+              =i.inventory
+            %td
+              =link_to '删除',"/home/delete_cart?id=#{i.id}"
+  .total-contain
+    .total
+      总计:
+      #count.total-number
+        =@total_price
+      元
+  .total-contain
+    %a.payment{:href => "/home/update_inventory "}
+      付款

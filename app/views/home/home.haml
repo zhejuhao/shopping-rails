@@ -1,0 +1,41 @@
+%header
+  .header-content
+    .header-name
+      %a.goods{:href => "home.haml"} 商品列表
+    .header-cart
+      %a.cart-name{:href => "shopping_cart.haml"}
+        %img.img-cart{:alt => "购物车", :src => "/black.png"}
+          购物车
+          (
+          #total_goods_number.goods-number
+            =@count
+          )
+.table
+  .table-header
+    .table-name
+      商品列表
+      %span.search
+        =form_for :text ,:url=> '/search' do |f|
+          =f.text_area :text ,:placeholder=>'请输入'
+          =f.submit :value =>"搜索" ,:onclick =>'show_result()'
+  %table#show_goods_list.table-contain
+    %thead
+      %tr.table-body-header
+        %td.td-width 分类
+        %td.td-width 名称
+        %td.td-width 单价(元)
+        %td 单位
+        %td.td-cart &nbsp;
+    %tbody
+      -@good_info.each do|i|
+        %tr{:id=>"tr#{i.id}"}
+          %td{:id=>"sort#{i.id}"}
+            =i.sort
+          %td{:id=>"name#{i.id}"}
+            =i.name
+          %td{:id=>"price#{i.id}"}
+            =i.price
+          %td{:id=>"unit#{i.id}"}
+            =i.unit
+          %td
+            %input.add-cart{:onclick => "add_to_cart(#{i.id})", :type => 'button', :value => '加入购物车',:id=>"#{i.id}"}

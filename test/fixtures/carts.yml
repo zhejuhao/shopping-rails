@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sort: MyText
+  name: MyText
+  unit: MyText
+  price: 1.5
+  count：int: MyString
+
+two:
+  sort: MyText
+  name: MyText
+  unit: MyText
+  price: 1.5
+  count：int: MyString
